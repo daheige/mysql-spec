@@ -279,4 +279,3 @@ MySQL 数据库与 Oracle、 SQL Server 等数据库相比，有其内核上的�
 3. 【强制】禁用 procedure、function、trigger、views、event、外键约束。因为他们消耗数据库资源，降低数据库实例可扩展性。推荐都在程序端实现。
 4. 【强制】禁用 `insert into … on duplicate key update …` 在高并发环境下，会造成主从不一致。
 5. 【强制】禁止联表更新语句，如 `update t1, t2 where t1.id = t2.id …`。
-6. 
